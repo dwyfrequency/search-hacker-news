@@ -49,28 +49,28 @@ class App extends Component {
         <footer>
           <ul>
             <li>
-              <a href="">About</a>
+              <a href="/">About</a>
             </li>
             <li>
-              <a href="">Settings</a>
+              <a href="/">Settings</a>
             </li>
             <li>
-              <a href="">Help</a>
+              <a href="/">Help</a>
             </li>
             <li>
-              <a href="">API</a>
+              <a href="/">API</a>
             </li>
             <li>
-              <a href="">Hacker News</a>
+              <a href="/">Hacker News</a>
             </li>
             <li>
-              <a href="">Fork/Contribute</a>
+              <a href="/">Fork/Contribute</a>
             </li>
             <li>
-              <a href="">Status</a>
+              <a href="/">Status</a>
             </li>
             <li>
-              <a href="">Cool app</a>
+              <a href="/">Cool app</a>
             </li>
           </ul>
         </footer>
