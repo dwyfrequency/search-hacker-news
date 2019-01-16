@@ -7,7 +7,7 @@ class App extends Component {
       <div className="App">
         <header className="Header">
           <div className="TopHeader">
-            <img src="" alt="logo" />
+            <img src={Logo} alt="logo" className="Logo" />
             <form>
               <input
                 type="text"

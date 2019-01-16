@@ -142,16 +142,29 @@ body {
   background-color: black;
   position: sticky;
   top: 0;
+  height: 15vh;
+}
+
+.SearchFilters {
+  grid-column: col-start / span 12;
+  background-color: purple;
+  height: 5vh;
 }
 
 .Main {
-  grid-column: col-start / 12;
+  grid-column: col-start / span 12;
   background-color: orange;
   height: 80vh;
 }
 
 .Footer {
-  grid-column: col-start / 12;
+  grid-column: col-start / span 12;
   background-color: goldenrod;
-  height: 10vh;
+  height: 100%;
+}
+
+/* NavBar */
+.Logo {
+  height: 50px;
+  width: 50px;
 }
