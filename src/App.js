@@ -5,9 +5,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
+        <header className="Header">
           <div className="TopHeader">
-            <img src={Logo} alt="logo" />
+            <img src="" alt="logo" />
             <form>
               <input
                 type="text"
@@ -22,7 +22,7 @@ class App extends Component {
             <button>All time</button>
           </div>
         </header>
-        <main>
+        <main className="Main">
           <div className="ArticleListItem">
             <h2>
               <a href="/">Article Title</a>
@@ -46,7 +46,7 @@ class App extends Component {
             <button>Page 1</button>
           </div>
         </main>
-        <footer>
+        <footer className="Footer">
           <ul>
             <li>
               <a href="/">About</a>
