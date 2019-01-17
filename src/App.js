@@ -1,32 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Logo from "./assets/logo-hn-search.png";
-
-const SearchForm = ({ addSearchValue }) => {
-  const [value, setValue] = useState("");
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    if (!value) return;
-    addSearchValue(value);
-    setValue("");
-  };
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        className="input"
-        value={value}
-        placeholder="Search Stories by title, url or author"
-        onChange={e => setValue(e.target.value)}
-      />
-    </form>
-  );
-};
+import SearchForm from "./containers/SearchForm";
 
 const App = props => {
   const [searchValue, setSearchValue] = useState("");
-
   const addSearchValue = text => setSearchValue(text);
 
   return (
@@ -34,9 +11,7 @@ const App = props => {
       <header className="Header">
         <div className="TopHeader">
           <img src={Logo} alt="logo" className="Logo" />
-          <form>
-            <SearchForm addSearchValue={addSearchValue} />
-          </form>
+          <SearchForm addSearchValue={addSearchValue} />
           <div className="Toolbar">ToolBar</div>
         </div>
         <div className="SearchFilters">
