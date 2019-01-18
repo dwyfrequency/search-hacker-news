@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Logo from "./assets/logo-hn-search.png";
 import SearchForm from "./containers/SearchForm";
+import ArticleListItems from "./components/ArticleListItems/ArticleListItems";
+import ArticleListItem from "./components/ArticleListItems/ArticleListItem/ArticleListItem";
 
 const App = props => {
+  // State
   const [searchValue, setSearchValue] = useState("");
+
+  // Methods
   const addSearchValue = text => setSearchValue(text);
 
   return (
@@ -21,25 +26,7 @@ const App = props => {
         </div>
       </header>
       <main className="Main">
-        <div className="ArticleListItem">
-          <h2>
-            <a href="/">Article Title</a>
-          </h2>
-          <ul>
-            <li>
-              <a href="/">Points</a>
-            </li>
-            <li>
-              <a href="/">Author</a>
-            </li>
-            <li>
-              <a href="/">Age</a>
-            </li>
-            <li>
-              <a href="/">Comments</a>
-            </li>
-          </ul>
-        </div>
+        <ArticleListItem />
         <div className="MoreResults">
           <button>Page 1</button>
         </div>
