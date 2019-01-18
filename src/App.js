@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Logo from "./assets/logo-hn-search.png";
 import SearchForm from "./containers/SearchForm";
 import ArticleListItems from "./components/ArticleListItems/ArticleListItems";
-import ArticleListItem from "./components/ArticleListItems/ArticleListItem/ArticleListItem";
+import ArticleListItem from "./components/ArticleListItems/ArticleListItems";
 
 const App = props => {
   // State
@@ -26,7 +26,7 @@ const App = props => {
         </div>
       </header>
       <main className="Main">
-        <ArticleListItem />
+        <ArticleListItems />
         <div className="MoreResults">
           <button>Page 1</button>
         </div>
