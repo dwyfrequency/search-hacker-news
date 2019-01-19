@@ -8,6 +8,9 @@ const App = props => {
   // State
   const [searchValue, setSearchValue] = useState("");
 
+  // http://hn.algolia.com/api/v1/search_by_date?tags=story  || https://www.robinwieruch.de/react-hooks-fetch-data/
+  const [] = useEffect();
+
   // Methods
   const addSearchValue = text => setSearchValue(text);
 
