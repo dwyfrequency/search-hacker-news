@@ -1,7 +1,5 @@
 import React from "react";
 
-// const today =
-
 // age comes in as 2011-10-05T23:42:23.000Z
 const convertAge = isoString => {
   const timeDifference = new Date().getTime() - new Date(isoString).getTime();
@@ -27,6 +25,7 @@ const ArticleListItem = ({
   num_comments,
   objectID
 }) => {
+  const hnUrl = `https://news.ycombinator.com/item?id=${objectID}`;
   return (
     <div className="ArticleListItem">
       <h2>
@@ -34,24 +33,16 @@ const ArticleListItem = ({
       </h2>
       <ul>
         <li>
-          <a href={`https://news.ycombinator.com/item?id=${objectID}`}>
-            {points} points
-          </a>
+          <a href={hnUrl}>{points} points</a>
         </li>
         <li>
-          <a href={`https://news.ycombinator.com/item?id=${objectID}`}>
-            {author}
-          </a>
+          <a href={hnUrl}>{author}</a>
         </li>
         <li>
-          <a href={`https://news.ycombinator.com/item?id=${objectID}`}>
-            {convertAge(ageIsoString)}
-          </a>
+          <a href={hnUrl}>{convertAge(ageIsoString)}</a>
         </li>
         <li>
-          <a href={`https://news.ycombinator.com/item?id=${objectID}`}>
-            {num_comments} comments
-          </a>
+          <a href={hnUrl}>{num_comments} comments</a>
         </li>
         <li>
           <a href={url}>({url})</a>
