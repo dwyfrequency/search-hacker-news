@@ -18,7 +18,15 @@ const convertAge = isoString => {
   return dif;
 };
 
-const ArticleListItem = ({ author, points, title, url, ageIsoString }) => {
+const ArticleListItem = ({
+  author,
+  points,
+  title,
+  url,
+  ageIsoString,
+  num_comments,
+  objectID
+}) => {
   return (
     <div className="ArticleListItem">
       <h2>
@@ -26,16 +34,27 @@ const ArticleListItem = ({ author, points, title, url, ageIsoString }) => {
       </h2>
       <ul>
         <li>
-          <a href="/">{points}</a>
+          <a href={`https://news.ycombinator.com/item?id=${objectID}`}>
+            {points} points
+          </a>
         </li>
         <li>
-          <a href="/">{author}</a>
+          <a href={`https://news.ycombinator.com/item?id=${objectID}`}>
+            {author}
+          </a>
         </li>
         <li>
-          <a href="/">{convertAge(ageIsoString)}</a>
+          <a href={`https://news.ycombinator.com/item?id=${objectID}`}>
+            {convertAge(ageIsoString)}
+          </a>
         </li>
         <li>
-          <a href="/">Comments</a>
+          <a href={`https://news.ycombinator.com/item?id=${objectID}`}>
+            {num_comments} comments
+          </a>
+        </li>
+        <li>
+          <a href={url}>({url})</a>
         </li>
       </ul>
       <hr />

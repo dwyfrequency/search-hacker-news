@@ -10,9 +10,11 @@ const ArticleListItems = ({ apiResponse }) => {
         <ArticleListItem
           ageIsoString={item.created_at}
           author={item.author}
+          objectID={item.objectID}
           title={item.title}
           url={item.url}
           points={item.points}
+          num_comments={item.num_comments}
           key={idx}
         />
       ))}
