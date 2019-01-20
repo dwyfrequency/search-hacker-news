@@ -6,20 +6,20 @@ import ArticleListItem from "./components/ArticleListItems/ArticleListItems";
 
 const App = props => {
   // State
-  const [searchValue, setSearchValue] = useState("");
+  const [apiResponse, setAPIResponse] = useState("");
 
   // http://hn.algolia.com/api/v1/search_by_date?tags=story  || https://www.robinwieruch.de/react-hooks-fetch-data/
-  const [] = useEffect();
+  // const [] = useEffect();
 
   // Methods
-  const addSearchValue = text => setSearchValue(text);
+  const addAPIResponse = data => setAPIResponse(data);
 
   return (
     <div className="App">
       <header className="Header">
         <div className="TopHeader">
           <img src={Logo} alt="logo" className="Logo" />
-          <SearchForm addSearchValue={addSearchValue} />
+          <SearchForm addAPIResponse={addAPIResponse} />
           <div className="Toolbar">ToolBar</div>
         </div>
         <div className="SearchFilters">

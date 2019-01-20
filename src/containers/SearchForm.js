@@ -1,17 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { async } from "q";
+import axios from "axios";
 
-const SearchForm = ({ addSearchValue }) => {
+const SearchForm = ({ addAPIResponse }) => {
   const [value, setValue] = useState("");
+  const [data, setData] = useState({ hits: [] });
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    if (!value) return;
-    addSearchValue(value);
-    setValue("");
+  const fetchData = async () => {
+    const results = await axios(
+      `http://hn.algolia.com/api/v1/search?query=${value}`
+    );
+
+    await setData(results.data);
+    addAPIResponse(data);
   };
 
+  useEffect(
+    () => {
+      fetchData();
+    },
+    [value]
+  );
+
   return (
-    <form onSubmit={handleSubmit}>
+    <form>
       <input
         type="text"
         className="input"
