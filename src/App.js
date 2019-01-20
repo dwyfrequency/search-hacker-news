@@ -6,13 +6,14 @@ import ArticleListItem from "./components/ArticleListItems/ArticleListItems";
 
 const App = props => {
   // State
-  const [apiResponse, setAPIResponse] = useState("");
+  const [apiResponse, setAPIResponse] = useState({ hits: [] });
 
   // http://hn.algolia.com/api/v1/search_by_date?tags=story  || https://www.robinwieruch.de/react-hooks-fetch-data/
   // const [] = useEffect();
 
   // Methods
   const addAPIResponse = data => setAPIResponse(data);
+  console.log(apiResponse);
 
   return (
     <div className="App">
@@ -29,7 +30,7 @@ const App = props => {
         </div>
       </header>
       <main className="Main">
-        <ArticleListItems />
+        <ArticleListItems apiResponse={apiResponse} />
         <div className="MoreResults">
           <button>Page 1</button>
         </div>

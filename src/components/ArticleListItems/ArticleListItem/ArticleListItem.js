@@ -20,6 +20,7 @@ const ArticleListItem = params => {
           <a href="/">Comments</a>
         </li>
       </ul>
+      <hr />
     </div>
   );
 };
