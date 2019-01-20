@@ -12,7 +12,10 @@ const App = props => {
   // const [] = useEffect();
 
   // Methods
-  const addAPIResponse = data => setAPIResponse(data);
+  const addAPIResponse = data => {
+    console.log(`data`, data);
+    data && setAPIResponse(data);
+  };
   console.log(apiResponse);
 
   return (

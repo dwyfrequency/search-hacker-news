@@ -1,17 +1,22 @@
 import React from "react";
 
-const ArticleListItem = params => {
+// age comes in as 2011-10-05T23:42:23.000Z
+const convertAge = isoString => {
+  const date = new Date(isoString);
+};
+
+const ArticleListItem = ({ author, points, title, url, ageIsoString }) => {
   return (
     <div className="ArticleListItem">
       <h2>
-        <a href="/">Article Title</a>
+        <a href={url}>{title}</a>
       </h2>
       <ul>
         <li>
-          <a href="/">Points</a>
+          <a href="/">{points}</a>
         </li>
         <li>
-          <a href="/">Author</a>
+          <a href="/">{author}</a>
         </li>
         <li>
           <a href="/">Age</a>

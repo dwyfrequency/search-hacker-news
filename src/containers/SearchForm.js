@@ -4,15 +4,13 @@ import axios from "axios";
 
 const SearchForm = ({ addAPIResponse }) => {
   const [value, setValue] = useState("");
-  const [data, setData] = useState({ hits: [] });
 
   const fetchData = async () => {
     const results = await axios(
       `http://hn.algolia.com/api/v1/search?query=${value}`
     );
 
-    await setData(results.data);
-    addAPIResponse(data);
+    await addAPIResponse(results.data);
   };
 
   useEffect(

@@ -1,3 +1,6 @@
+To do:
+create convert date function
+
 https://daveceddia.com/react-practice-projects/
 
 checkout: https://www.youtube.com/watch?v=oGB_VPrld0U&index=2&list=PLTTC1K14KAxHj6AftnRUD28SQaoVauvl3
