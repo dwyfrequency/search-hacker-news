@@ -27,9 +27,9 @@ const App = props => {
           <div className="Toolbar">ToolBar</div>
         </div>
         <div className="SearchFilters">
-          <button>Stories</button>
-          <button>Popularity</button>
-          <button>All time</button>
+          Search <button>Stories </button>
+          by <button>Popularity </button>
+          for <button>All time </button>
         </div>
       </header>
       <main className="Main">

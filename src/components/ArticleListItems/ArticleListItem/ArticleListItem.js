@@ -36,7 +36,7 @@ const ArticleListItem = ({
           <a href={hnUrl}>{points} points</a>
         </li>
         <li>
-          <a href={hnUrl}>{author}</a>
+          <a href="/">{author}</a>
         </li>
         <li>
           <a href={hnUrl}>{convertAge(ageIsoString)}</a>
