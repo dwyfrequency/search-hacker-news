@@ -154,7 +154,7 @@ body {
 
 .Main {
   grid-column: col-start / span 12;
-  background-color: orange;
+  background-color: #f6f6ef;
   top: 85;
 }
 
@@ -180,4 +180,11 @@ body {
 .Logo {
   height: 50px;
   width: 50px;
+}
+
+/* ArticleListItem */
+.ArticleListItem ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
