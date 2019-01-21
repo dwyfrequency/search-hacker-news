@@ -134,27 +134,28 @@ body {
 .App {
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
-  grid-template-rows: 10vh 1fr;
+  grid-template-rows: 40px 1fr;
 }
 
 .Header {
   grid-column: col-start / span 12;
-  background-color: black;
+  grid-row: 1 / span 5;
+  background-color: #ff742b;
   position: sticky;
   top: 0;
-  height: 15vh;
+  height: 85px;
 }
 
 .SearchFilters {
   grid-column: col-start / span 12;
-  background-color: purple;
-  height: 5vh;
+  background-color: #fdfdfd;
+  height: 35px;
 }
 
 .Main {
   grid-column: col-start / span 12;
   background-color: orange;
-  height: 80vh;
+  top: 85;
 }
 
 .Footer {

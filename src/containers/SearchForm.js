@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { async } from "q";
 import axios from "axios";
 
 const SearchForm = ({ addAPIResponse }) => {

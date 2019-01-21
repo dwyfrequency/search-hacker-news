@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Logo from "./assets/logo-hn-search.png";
 import SearchForm from "./containers/SearchForm";
 import ArticleListItems from "./components/ArticleListItems/ArticleListItems";
-import ArticleListItem from "./components/ArticleListItems/ArticleListItems";
 
 const App = props => {
   // State
@@ -12,10 +11,8 @@ const App = props => {
   // const [] = useEffect();
 
   // Methods
-  const addAPIResponse = data => {
-    console.log(`data`, data);
-    data && setAPIResponse(data);
-  };
+  const addAPIResponse = data => setAPIResponse(data);
+
   console.log(apiResponse);
 
   return (
