@@ -1,5 +1,5 @@
 To do:
-create convert date function
+read up and implement react-router-dom for toolbar component https://reacttraining.com/react-router/web/guides/basic-components
 
 https://daveceddia.com/react-practice-projects/
 
