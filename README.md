@@ -1,11 +1,15 @@
 To do:
 read up and implement react-router-dom for toolbar component https://reacttraining.com/react-router/web/guides/basic-components
+review grid setup for a better layout.
 
 https://daveceddia.com/react-practice-projects/
 
 checkout: https://www.youtube.com/watch?v=oGB_VPrld0U&index=2&list=PLTTC1K14KAxHj6AftnRUD28SQaoVauvl3
 
 checkout how they use hooks with forms => https://scotch.io/tutorials/build-a-react-to-do-app-with-react-hooks-no-class-components
+
+HN API docs:
+https://hn.algolia.com/api
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
