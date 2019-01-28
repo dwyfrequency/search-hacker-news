@@ -1,6 +1,8 @@
 To do:
 read up and implement react-router-dom for toolbar component https://reacttraining.com/react-router/web/guides/basic-components
-review grid setup for a better layout.
+
+- will need to rework app component work better with router
+  review grid setup for a better layout.
 
 https://daveceddia.com/react-practice-projects/
 
