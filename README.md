@@ -4,6 +4,8 @@ read up and implement react-router-dom for toolbar component https://reacttraini
 - will need to rework app component work better with router
   review grid setup for a better layout.
 
+media queries need to be added for input in header. (the current ones are not working)
+
 https://daveceddia.com/react-practice-projects/
 
 checkout: https://www.youtube.com/watch?v=oGB_VPrld0U&index=2&list=PLTTC1K14KAxHj6AftnRUD28SQaoVauvl3
