@@ -189,6 +189,11 @@ body {
   align-items: center;
 }
 
+.TopHeader input {
+  height: 30px;
+  width: 800px;
+}
+
 .SearchFilters {
   display: flex;
   justify-content: flex-start;
@@ -205,4 +210,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+@media (min-width: 320px) {
+  .TopHeader input {
+    width: 164px;
+  }
 }
